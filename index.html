@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script type="text/javascript" src="./index.js" defer=""></script>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+
+  <body>
+
+    <div id="texto">
+      <h1 id="titulo"> Joguinho do caminho pelos quadrados </h1>
+      <h2 id="subtitulo"> Tente chegar até o outro lado!</h2>
+      <p> Regras: </p>
+      <p> 1. Clique em "Start" para começar o jogo. <br>
+        2. Clique no quadrado ao lado ou abaixo. <br>
+        3. Se o quadrado ficar verde, você pode avançar e clicar em outro quadrado adjacente.<br>
+        4. Se o quadrado ficar vermelho, você deve ir por outro caminho.
+      </p>
+    </div>
+    <div id="tabela">
+      <table id="table" border="2" width="400px" height="400px" cellspacing="0" bordercolor="black">
+        <tbody>
+          <tr id="firstLine">
+            <th id="start" onclick="Start()"> Start</th>
+            <th id="As" onclick="As()"> as </th>
+            <th id="Bs" onclick="Bs()"> bs </th>
+            <th id="Cs" onclick="Cs()"> cs </th>
+          </tr>
+          <tr id="secondLine">
+            <td id="Sa" onclick="Sa()"> sa </td>
+            <td id="Aa" onclick="Aa()"> aa </td>
+            <td id="Ba" onclick="Ba()"> ba </td>
+            <td id="Ca" onclick="Ca()"> ca </td>
+          </tr>
+          <tr id="thirdLine">
+            <td id="Sb" onclick="Sb()"> sb </td>
+            <td id="Ab" onclick="Ab()"> ab </td>
+            <td id="Bb" onclick="Bb()"> bb </td>
+            <td id="Cb" onclick="Cb()"> cb </td>
+          </tr>
+          <tr id="fourthLine">
+            <td id="Sc" onclick="Sc()"> sc </td>
+            <td id="Ac" onclick="Ac()"> ac </td>
+            <td id="Bc" onclick="Bc()"> bc </td>
+            <td id="Cc" onclick="Cc()"> cc </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+    <div id="textoBaixo">
+      <h2> Parabéns! Você venceu! <br> </h2>
+      <h2> <button id="playAgainButton" value="Refresh" onclick="PlayAgain()"> Jogar de novo </button></h2>
+    </div>
+
+  </body>
+
+</html>
