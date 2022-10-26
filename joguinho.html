@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joguinho do caminho pelos quadrados do @Ghuyer</title>
+</head>
+<body>
+
+  <div id="texto">
+    <h1 id=titulo> Joguinho do caminho pelos quadrados </h1>
+    <h2 id="subtitulo"> Tente chegar até o outro lado!</h2>
+    <p> Regras: </p>
+    <p> 1. Clique em "Start" para começar o jogo. <br>
+      2. Clique no quadrado ao lado ou abaixo. <br>
+      3. Se o quadrado ficar verde, você pode avançar e clicar em outro quadrado adjacente.<br>
+      4. Se o quadrado ficar vermelho, você deve ir por outro caminho.
+    </p>
+  </div>
+  <div id="tabela">
+    <table id="table" border="2" width="400px" height="400px" cellspacing="0" bordercolor="black">
+      <tr id="firstLine">
+        <th id="start" onclick="Start()"> Start</th>
+        <th id="As" onclick="As()"> </th>
+        <th id="Bs" onclick="Bs()"> </th>
+        <th id="Cs" onclick="Cs()"> </th>
+      </tr>
+      <tr id="secondLine">
+        <td id="Sa" onclick="Sa()"> </td>
+        <td id="Aa" onclick="Aa()"> </td>
+        <td id="Ba" onclick="Ba()"> </td>
+        <td id="Ca" onclick="Ca()"> </td>
+      </tr>
+      <tr id="thirdLine">
+        <td id="Sb" onclick="Sb()"> </td>
+        <td id="Ab" onclick="Ab()"> </td>
+        <td id="Bb" onclick="Bb()"> </td>
+        <td id="Cb" onclick="Cb()"> </td>
+      </tr>
+      <tr id="fourthLine">
+        <td id="Sc" onclick="Sc()"> </td>
+        <td id="Ac" onclick="Ac()"> </td>
+        <td id="Bc" onclick="Bc()"> </td>
+        <td id="Cc" onclick="Cc()"> </td>
+      </tr>
+    </table>
+  
+  </div>
+  <div id="textoBaixo">
+    <h2> Parabéns! Você venceu! <br> </h2>
+    <h2> <button id="playAgainButton" value="Refresh" onclick="PlayAgain()"> Jogar de novo </button></h2>
+  </div>
+      <div id="textoBaixo">
+        <h2> Parabéns! Você venceu! <br> </h2>
+        <h2> <button id="playAgainButton" value="Refresh" onclick="PlayAgain()"> Jogar de novo </button></h2>
+      </div>
+    
+</body>
+</html>
